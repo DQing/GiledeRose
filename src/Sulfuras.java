@@ -1,15 +1,10 @@
-public class Sulfuras {
-    private int quality;
+public class Sulfuras extends Product {
 
     public Sulfuras(int quality) {
-        this.quality = quality;
-    }
-
-    public int getQuality() {
-        return quality;
+        super(quality);
     }
 
     public void updateQualityWhenPassed(int days) {
-
+        quality += 0;
     }
 }

@@ -1,12 +1,7 @@
-public class AgedBrie {
-    private int quality;
+public class AgedBrie extends Product {
 
     public AgedBrie(int quality) {
-        this.quality = quality;
-    }
-
-    public int getQuality() {
-        return quality;
+        super(quality);
     }
 
     public void updateQualityWhenPassed(int days) {

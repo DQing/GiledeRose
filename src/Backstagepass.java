@@ -1,17 +1,9 @@
-public class Backstagepass {
-    private int sellin;
-    private int availableDays;
-
-    private int quality;
+public class Backstagepass extends Product {
+    private final int availableDays;
 
     public Backstagepass(int sellin, int quality) {
-        this.sellin = sellin;
+        super(sellin, quality);
         this.availableDays = sellin;
-        this.quality = quality;
-    }
-
-    public int getQuality() {
-        return quality;
     }
 
     public void updateQualityWhenPassed(int days) {
